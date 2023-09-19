@@ -1,0 +1,26 @@
+package app;
+
+
+import java.util.Scanner;
+
+import entities.Produtos;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Produtos produtos = new Produtos();	
+		
+		System.out.println("Insira o nome, o valor e qntd do produto");
+		produtos.nome = sc.nextLine();
+		produtos.valor = sc.nextDouble();
+		produtos.qntd = sc.nextInt();
+		
+		System.out.println(produtos);
+
+		sc.close();
+		
+	}
+
+}
