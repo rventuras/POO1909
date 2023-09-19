@@ -1,0 +1,39 @@
+package entities;
+
+public class Produtos {
+	public String nome;
+	public double valor;
+	public int qntd;
+	
+	public double total() {
+	
+	return valor * qntd; }
+	
+	public void addProduto(int qntd) {
+		this.qntd = this.qntd + qntd;
+		
+		
+		
+	}
+	
+	public void removeProduto(int qntd) {
+		
+		this.qntd = this.qntd - qntd;
+	}
+	
+	public String toString() {
+		return "Produto: " + nome
+				+ "\nValor: R$"
+				+ valor
+				+ "\nQuantidade: "
+				+ qntd
+				+ "\nTotal: R$"
+				+ total();
+				
+	}
+	
+	
+	
+	
+	
+}
